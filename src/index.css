@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", "Noto Nastaliq Urdu", system-ui, sans-serif;
+  --font-display: "Fraunces", "Noto Sans Devanagari", "Noto Nastaliq Urdu", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --brand-primary: #1d4ed8;
+}
+
+.dark {
+  --brand-primary: #3b82f6;
+}
+
+html[dir="rtl"] body {
+  font-family: "Plus Jakarta Sans", "Noto Nastaliq Urdu", system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
